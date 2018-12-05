@@ -12,6 +12,7 @@ spec:
   ports:
     - port: {{ .Values.service.port }}
       targetPort: http
+      nodePort: 31081
       protocol: TCP
       name: http
   selector:

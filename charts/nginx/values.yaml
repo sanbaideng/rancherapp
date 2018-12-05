@@ -5,12 +5,12 @@
 replicaCount: 1
 
 image:
-  repository: sanbaideng/debian
+  repository: sanbaideng/nginx
   tag: 1.01
   pullPolicy: IfNotPresent
 
 service:
-  type: ClusterIP
+  type: NodePort
   port: 80
 
 ingress:
