@@ -1,13 +1,13 @@
 {{- if .Values.ingress.enabled -}}
-{{- $fullName := include "debian.fullname" . -}}
+{{- $fullName := include "nginx.fullname" . -}}
 {{- $ingressPath := .Values.ingress.path -}}
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: {{ $fullName }}
   labels:
-    app: {{ template "debian.name" . }}
-    chart: {{ template "debian.chart" . }}
+    app: {{ template "nginx.name" . }}
+    chart: {{ template "nginx.chart" . }}
     release: {{ .Release.Name }}
     heritage: {{ .Release.Service }}
 {{- with .Values.ingress.annotations }}

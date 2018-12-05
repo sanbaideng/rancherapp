@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ template "debian.fullname" . }}
+  name: {{ template "nginx.fullname" . }}
   labels:
-    app: {{ template "debian.name" . }}
-    chart: {{ template "debian.chart" . }}
+    app: {{ template "nginx.name" . }}
+    chart: {{ template "nginx.chart" . }}
     release: {{ .Release.Name }}
     heritage: {{ .Release.Service }}
 spec:
@@ -12,9 +12,9 @@ spec:
   ports:
     - port: {{ .Values.service.port }}
       targetPort: http
-      nodePort: 31081
+      nodePort: {{ .Values.service.nodePort }}
       protocol: TCP
       name: http
   selector:
-    app: {{ template "debian.name" . }}
+    app: {{ template "nginx.name" . }}
     release: {{ .Release.Name }}

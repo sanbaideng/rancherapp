@@ -1,22 +1,22 @@
 apiVersion: apps/v1beta2
 kind: Deployment
 metadata:
-  name: {{ template "debian.fullname" . }}
+  name: {{ template "nginx.fullname" . }}
   labels:
-    app: {{ template "debian.name" . }}
-    chart: {{ template "debian.chart" . }}
+    app: {{ template "nginx.name" . }}
+    chart: {{ template "nginx.chart" . }}
     release: {{ .Release.Name }}
     heritage: {{ .Release.Service }}
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      app: {{ template "debian.name" . }}
+      app: {{ template "nginx.name" . }}
       release: {{ .Release.Name }}
   template:
     metadata:
       labels:
-        app: {{ template "debian.name" . }}
+        app: {{ template "nginx.name" . }}
         release: {{ .Release.Name }}
     spec:
       containers:
