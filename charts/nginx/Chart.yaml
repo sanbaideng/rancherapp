@@ -1,6 +1,6 @@
 apiVersion: v1
 appVersion: "1.0"
 description: nginx chart for Kubernetes
-icon: http://gitlab.cecii.cn/softonair/ui/ceciilogo/blob/master/%E5%B7%B4%E8%B5%AB%E7%B3%BB%E7%BB%9FLOGO/%E5%B7%B4%E8%B5%AB%E7%B3%BB%E7%BB%9FLOGO%E6%A8%AA%E7%89%88%E4%B8%AD%E8%8B%B1%E6%96%87%20(2).jpg
+icon: https://github.com/sanbaideng/rancherapp/blob/master/charts/nginx/nginx.png
 name: nginx
 version: 0.1.0
