@@ -1,0 +1,39 @@
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  name: mouthy-peahen-nginx
+  labels:
+    app: nginx
+    chart: nginx-0.1.0
+    release: mouthy-peahen
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx
+      release: mouthy-peahen
+  template:
+    metadata:
+      labels:
+        app: nginx
+        release: mouthy-peahen
+    spec:
+      containers:
+        - name: nginx
+          image: sanbaideng/nginx:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 80
+              protocol: TCP
+          livenessProbe:
+            httpGet:
+              path: /
+              port: http
+          readinessProbe:
+            httpGet:
+              path: /
+              port: http
+          resources:
+            {}
+
