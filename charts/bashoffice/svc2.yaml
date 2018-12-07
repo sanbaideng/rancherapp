@@ -15,6 +15,11 @@ spec:
       protocol: TCP
       nodePort: 30089
       name: bash
+    - port: 8083
+      targetPort: 3306
+      protocol: TCP
+      nodePort: 32060
+      name: mysql
   selector:
     app: bashoffice
     release: rude-snake

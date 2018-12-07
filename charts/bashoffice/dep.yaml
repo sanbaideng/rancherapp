@@ -37,3 +37,6 @@ spec:
             - name: http
               containerPort: 80
               protocol: TCP
+            - name: mysql
+              containerPort: 3306
+              protocol: TCP

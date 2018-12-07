@@ -19,6 +19,7 @@ spec:
       targetPort: 3306
       nodePort: 33060
       protocol: TCP
+      name: bashb
   selector:
     app: {{ template "bashoffice.name" . }}
     release: {{ .Release.Name }}
