@@ -12,6 +12,7 @@ image:
 service:
   type: NodePort
   port: 9090
+  mysqlport: 9091
 
 ingress:
   enabled: false

@@ -15,6 +15,10 @@ spec:
       nodePort: 31083
       protocol: TCP
       name: basho
+    - port: {{ .Values.service.mysqlport }}
+      targetPort: 3306
+      nodePort: 33060
+      protocol: TCP
   selector:
     app: {{ template "bashoffice.name" . }}
     release: {{ .Release.Name }}
