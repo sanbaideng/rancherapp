@@ -17,7 +17,6 @@ spec:
       name: basho
     - port: {{ .Values.service.mysqlport }}
       targetPort: 3306
-      nodePort: 33060
       protocol: TCP
       name: bashb
   selector:
