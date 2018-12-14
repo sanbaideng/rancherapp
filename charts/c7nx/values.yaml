@@ -5,13 +5,14 @@
 replicaCount: 1
 
 image:
-  repository: nginx
-  tag: stable
+  repository: c7nx
+  tag: latest
   pullPolicy: IfNotPresent
 
 service:
-  type: ClusterIP
-  port: 80
+  type: NodePort
+  port: 31281
+  agport: 31890
 
 ingress:
   enabled: false

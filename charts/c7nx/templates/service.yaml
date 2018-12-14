@@ -11,9 +11,13 @@ spec:
   type: {{ .Values.service.type }}
   ports:
     - port: {{ .Values.service.port }}
-      targetPort: http
+      targetPort: 8080
+      protocol: TCP      
+      name: c7nxa
+    - port: {{ .Values.service.agport }}
+      targetPort: 3389
       protocol: TCP
-      name: http
+      name: c7nxb
   selector:
     app: {{ template "c7nx.name" . }}
     release: {{ .Release.Name }}
