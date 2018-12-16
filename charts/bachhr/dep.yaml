@@ -1,32 +1,32 @@
 apiVersion: apps/v1beta2
 kind: Deployment
 metadata:
-  name: {{ template "bachhr.fullname" . }}
+  name: exegetical-gibbon-bachhr
   labels:
-    app: {{ template "bachhr.name" . }}
-    chart: {{ template "bachhr.chart" . }}
-    release: {{ .Release.Name }}
-    heritage: {{ .Release.Service }}
+    app: bachhr
+    chart: bachhr-0.1.0
+    release: exegetical-gibbon
+    heritage: Tiller
 spec:
-  replicas: {{ .Values.replicaCount }}
+  replicas: 1
   selector:
     matchLabels:
-      app: {{ template "bachhr.name" . }}
-      release: {{ .Release.Name }}
+      app: bachhr
+      release: exegetical-gibbon
   template:
     metadata:
       labels:
-        app: {{ template "bachhr.name" . }}
-        release: {{ .Release.Name }}
+        app: bachhr
+        release: exegetical-gibbon
     spec:
       volumes:
         - name: vol
           hostPath:
             path: /sys/fs/cgroup
       containers:
-        - name: {{ .Chart.Name }}
-          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
-          imagePullPolicy: {{ .Values.image.pullPolicy }}
+        - name: bachhr
+          image: "sanbaideng/bachhr:latest"
+          imagePullPolicy: IfNotPresent
           volumeMounts:
           - name: vol
             mountPath: /sys/fs/cgroup
