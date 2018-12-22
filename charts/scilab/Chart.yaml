@@ -2,5 +2,7 @@ apiVersion: v1
 appVersion: "1.0"
 description: SCILAB 是由法国国家信息、自动化研究院的科学家们开发的“开放源码”软件。SCILAB作为一种科学工程计算软件，其数据类型丰富，可以很方便地实现各种矩阵运算与图形显示，能应用于科学计算、数学建模、信号处理、决策优化、线性、非线性控制等各个方面
 icon: https://raw.githubusercontent.com/sanbaideng/rancherapp/master/charts/icons/scilab.jpg
+keywords:
+- gui
 name: scilab
 version: 0.1.0
