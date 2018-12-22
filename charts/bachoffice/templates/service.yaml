@@ -12,7 +12,7 @@ spec:
   ports:
     - port: {{ .Values.service.port }}
       targetPort: 80
-      nodePort: 31083
+      nodePort: 30021
       protocol: TCP
       name: basho
     - port: {{ .Values.service.mysqlport }}
