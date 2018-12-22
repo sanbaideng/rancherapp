@@ -1,5 +1,6 @@
 apiVersion: v1
 appVersion: "1.0"
-description: A Helm chart for Kubernetes
+description: 一款开源的oa开源系统，包括员工管理、组织机构、流程管理、信息汇总等
+icon: https://raw.githubusercontent.com/sanbaideng/rancherapp/master/charts/gear.png
 name: weboa
 version: 0.1.0
