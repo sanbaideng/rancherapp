@@ -1,6 +1,6 @@
 apiVersion: v1
 appVersion: "1.0"
-description: A Helm chart for Kubernetes
-icon: https://raw.githubusercontent.com/sanbaideng/rancherapp/master/charts/gear.png
+description: Inkscape是一款外国开发的开源矢量图形编辑软件，与Illustrator、Freehand、CorelDraw、Xara X 等其他软件相似
+icon: https://raw.githubusercontent.com/sanbaideng/rancherapp/master/charts/icons/inkscape.jpg
 name: inkscape
 version: 0.1.0
