@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: sanbaideng/bachhr
+  repository: reg.cecii.cn/pub/bachhr
   tag: latest
   pullPolicy: IfNotPresent
 

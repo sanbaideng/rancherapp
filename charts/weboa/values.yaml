@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: sanbaideng/weboa
+  repository: reg.cecii.cn/pub/weboa
   tag: latest
   pullPolicy: IfNotPresent
 

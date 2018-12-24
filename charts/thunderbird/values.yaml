@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: sanbaideng/thunderbird
+  repository: reg.cecii.cn/pub/thunderbird
   tag: latest
   pullPolicy: IfNotPresent
 

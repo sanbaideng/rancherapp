@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: sanbaideng/production
+  repository: reg.cecii.cn/pub/production
   tag: latest
   pullPolicy: IfNotPresent
 

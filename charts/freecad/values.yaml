@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: sanbaideng/freecad
+  repository: reg.cecii.cn/pub/freecad
   tag: latest
   pullPolicy: IfNotPresent
 

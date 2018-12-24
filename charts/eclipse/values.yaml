@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: sanbaideng/eclipse
+  repository: reg.cecii.cn/pub/eclipse
   tag: latest
   pullPolicy: IfNotPresent
 
