@@ -1,18 +1,18 @@
-# Default values for production.
+# Default values for bachvio.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
 replicaCount: 1
 
 image:
-  repository: reg.cecii.cn/pub/production
+  repository: reg.cecii.cn/pub/bachvio
   tag: latest
   pullPolicy: IfNotPresent
 
 service:
   type: NodePort
   port: 8081
-  nodePort: 30026
+  nodePort: 32110
   targetPort: 8080
 
 ingress:
