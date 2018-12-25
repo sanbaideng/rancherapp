@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: sanbaideng/netbeans
+  repository: reg.cecii.cn/pub/netbeans
   tag: latest
   pullPolicy: IfNotPresent
 

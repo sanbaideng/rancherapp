@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: sanbaideng/gthumb
+  repository: reg.cecii.cn/pub/gthumb
   tag: latest
   pullPolicy: IfNotPresent
 

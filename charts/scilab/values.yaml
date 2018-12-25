@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: sanbaideng/scilab
+  repository: reg.cecii.cn/pub/scilab
   tag: latest
   pullPolicy: IfNotPresent
 

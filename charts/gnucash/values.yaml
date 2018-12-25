@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: sanbaideng/gnucash
+  repository: reg.cecii.cn/pub/gnucash
   tag: latest
   pullPolicy: IfNotPresent
 

@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: sanbaideng/evolution
+  repository: reg.cecii.cn/pub/evolution
   tag: latest
   pullPolicy: IfNotPresent
 

@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: sanbaideng/inkscape
+  repository: reg.cecii.cn/pub/inkscape
   tag: latest
   pullPolicy: IfNotPresent
 

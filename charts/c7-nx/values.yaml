@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: sanbaideng/c7-nx
+  repository: reg.cecii.cn/pub/c7-nx
   tag: latest
   pullPolicy: IfNotPresent
 

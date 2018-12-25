@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: sanbaideng/blender
+  repository: reg.cecii.cn/pub/blender
   tag: latest
   pullPolicy: IfNotPresent
 

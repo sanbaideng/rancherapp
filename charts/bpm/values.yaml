@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: sanbaideng/bpm
+  repository: reg.cecii.cn/pub/bpm
   tag: latest
   pullPolicy: IfNotPresent
 

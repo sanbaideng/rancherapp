@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: sanbaideng/mes
+  repository: reg.cecii.cn/pub/mes
   tag: latest
   pullPolicy: IfNotPresent
 

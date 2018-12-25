@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: sanbaideng/rhythmbox
+  repository: reg.cecii.cn/pub/rhythmbox
   tag: latest
   pullPolicy: IfNotPresent
 
