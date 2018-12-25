@@ -12,7 +12,7 @@ image:
 service:
   type: NodePort
   port: 8081
-  nodePort: 30012
+  nodePort: 30030
   targetPort: 8080
 
 ingress:
