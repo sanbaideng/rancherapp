@@ -5,13 +5,13 @@
 replicaCount: 1
 
 image:
-  repository: reg.cecii.cn/pub/wulian
+  repository: reg2.cecii.cn/pub/wulian
   tag: latest
   pullPolicy: IfNotPresent
 
 service:
   type: NodePort
-  nodePort: 30027
+  nodePort: 30031
   targetPort: 8080
   port: 8081
 
