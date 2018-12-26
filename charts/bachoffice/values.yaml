@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: reg.cecii.cn/pub/bachoffice-root
+  repository: reg2.cecii.cn/pub/bachoffice
   tag: latest
   pullPolicy: IfNotPresent
 
