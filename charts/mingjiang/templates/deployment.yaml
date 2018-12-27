@@ -26,7 +26,6 @@ spec:
       containers:
         - name: {{ .Chart.Name }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
-          command: ["/home/apache-tomcat-8.5.35/bin/startup.sh"]
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           volumeMounts:
           - name: vol
