@@ -1,22 +1,22 @@
 apiVersion: apps/v1beta2
 kind: Deployment
 metadata:
-  name: {{ template "weberp.fullname" . }}
+  name: {{ template "mingjiang.fullname" . }}
   labels:
-    app: {{ template "weberp.name" . }}
-    chart: {{ template "weberp.chart" . }}
+    app: {{ template "mingjiang.name" . }}
+    chart: {{ template "mingjiang.chart" . }}
     release: {{ .Release.Name }}
     heritage: {{ .Release.Service }}
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      app: {{ template "weberp.name" . }}
+      app: {{ template "mingjiang.name" . }}
       release: {{ .Release.Name }}
   template:
     metadata:
       labels:
-        app: {{ template "weberp.name" . }}
+        app: {{ template "mingjiang.name" . }}
         release: {{ .Release.Name }}
     spec:
       volumes:
@@ -28,8 +28,6 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           volumeMounts:
-          command: [ "/bin/bash", "-c", "--" ]
-          args: [ "while true; do sleep 30; done;" ]
           - name: vol
             mountPath: /sys/fs/cgroup
             readOnly: true
