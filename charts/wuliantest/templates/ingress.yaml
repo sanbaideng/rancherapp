@@ -1,13 +1,13 @@
 {{- if .Values.ingress.enabled -}}
-{{- $fullName := include "wulian.fullname" . -}}
+{{- $fullName := include "wuliantest.fullname" . -}}
 {{- $ingressPath := .Values.ingress.path -}}
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: {{ $fullName }}
   labels:
-    app: {{ template "wulian.name" . }}
-    chart: {{ template "wulian.chart" . }}
+    app: {{ template "wuliantest.name" . }}
+    chart: {{ template "wuliantest.chart" . }}
     release: {{ .Release.Name }}
     heritage: {{ .Release.Service }}
 {{- with .Values.ingress.annotations }}
